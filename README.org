@@ -8,7 +8,7 @@ A plugin for the [[https://github.com/p-e-w/argos][Argos]] GNOME Extension to qu
 password manager [[https://www.passwordstore.org/][pass]].
 It presents your entries in a dropdown menu and on click copies the
 respective password to clipboard.
-./img/cat.jpg
+./pass-picker-screenshot.png
 
 ** Features and limitations
 
