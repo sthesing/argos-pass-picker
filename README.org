@@ -1,0 +1,27 @@
+#+title:    Pass Picker – Argos Plugin
+#+author:   Stefan Thesing
+#+email:    software@webdings.de
+
+* Overview
+
+A plugin for the [[https://github.com/p-e-w/argos][Argos]] GNOME Extension to quickly access entries of the unix
+password manager [[https://www.passwordstore.org/][pass]].
+It presents your entries in a dropdown menu and on click copies the
+respective password to clipboard.
+./img/cat.jpg
+
+** Features and limitations
+
+- Works on both Wayland and X.
+- Supports folders, but not subfolders (because GNOME Shell doesn't
+  [[https://github.com/p-e-w/argos#rendering][render nested submenus]])
+- Supports the [[https://github.com/tadfisher/pass-otp][pass-otp]] extension, it requires all otp entries to be
+  bundled in a folder called `otp`.
+
+
+** Requirement
+
+- [[https://www.passwordstore.org/][pass]]
+- [[https://github.com/bugaevc/wl-clipboard][wl-clipboard]], if you're running GNOME on Wayland.
+- [[https://github.com/astrand/xclip][xclip]], if you're running GNOME on X.
+- (optional): [[https://github.com/tadfisher/pass-otp][pass-otp]]
